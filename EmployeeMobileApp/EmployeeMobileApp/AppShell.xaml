@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:vm="clr-namespace:EmployeeMobileApp.Views"
+             x:Class="EmployeeMobileApp.AppShell">
+    <Tab Title="List" Icon="ListIcon.jpg">
+        <ShellContent Title="List" Route="EmployeesPage" ContentTemplate="{DataTemplate vm:EmployeesPage}" />
+    </Tab>
+    <Tab Title="Add" Icon="AddImage.png">
+        <ShellContent Title="Add" ContentTemplate="{DataTemplate vm:NewEmployeePage}" />
+    </Tab>
+</Shell>

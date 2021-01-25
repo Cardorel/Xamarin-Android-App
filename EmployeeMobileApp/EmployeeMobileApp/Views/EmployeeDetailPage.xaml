@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeMobileApp.Views.EmployeeDetailPage"
+             Shell.TabBarIsVisible="False"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame 
+                    Style="{StaticResource ImageFrame}">
+                    <Image 
+                        Source="{Binding Photo}" 
+                        />
+                </Frame>
+                <Label 
+                    Text="{Binding Name, StringFormat='Name: {0}'}"  
+                    FontSize="Medium"
+                    />
+                <Label 
+                    Text="{Binding Position , StringFormat='Position: {0}'}" 
+                    FontSize="Medium"
+                    />
+                <Label 
+                    Text="{Binding Birthday, StringFormat='Birthday: {0:MMMM dd , yyyy}'}" 
+                    FontSize="Medium"
+                    />
+                <Label 
+                    Text="{Binding Age, StringFormat='Age: {0} year(s) old'}"
+                    />
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    HorizontalOptions="End"
+                    >
+                    <Button 
+                        Text="Delete" 
+                        Background="red" 
+                        Command="{Binding DeleteEmployeeCommand}"
+                        />
+                    <Button 
+                        Text="Edit" 
+                        Command="{Binding EditCommand}"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeMobileApp.Views.NewEmployeePage"
+             Shell.NavBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             Shell.TabBarIsVisible="False"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="4">
+                <StackLayout 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center">
+                    <Frame Style="{StaticResource ImageFrame}">
+                        <Image 
+                            Source="{Binding Photo}" 
+                            HorizontalOptions="FillAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding PickImageCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                    <Frame Style="{StaticResource ImageFrameCamera}">
+                        <Image Source="CameraIcon.png">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding CaptureImageCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                </StackLayout>
+                <Entry 
+                    Text="{Binding Name , Mode=TwoWay}" 
+                    Placeholder="Enter your name..." 
+                    />
+                <Entry 
+                    Text="{Binding Position , Mode=TwoWay}" 
+                    Placeholder="Enter your position..." />
+                <DatePicker Date="{Binding Birthday ,Mode=TwoWay}" 
+                            Format="dd/MM/yyyy" 
+                            MinimumDate="Jan 1 1980" 
+                            MaximumDate="Jan 01 2007"
+                            />
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    Margin="4">
+                    <Button 
+                        Text="Cancel" 
+                        Command="{Binding CancelCommand}" 
+                        BackgroundColor="Red" 
+                        IsEnabled="False" 
+                        HorizontalOptions="FillAndExpand"
+                        />
+                    <Button 
+                        Text="Save" 
+                        Command="{Binding SaveEmployeeCommand}" 
+                        BackgroundColor="#0345fc" 
+                        IsEnabled="False"  
+                        HorizontalOptions="FillAndExpand"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

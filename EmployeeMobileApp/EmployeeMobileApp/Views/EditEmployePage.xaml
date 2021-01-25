@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeMobileApp.Views.EditEmployePage"
+             Shell.NavBarIsVisible="False"
+             Shell.PresentationMode="ModalAnimated"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry 
+                Placeholder="Edit the position.." 
+                Text="{Binding Position , Mode=TwoWay}"
+                />
+            <StackLayout 
+                Orientation="Horizontal"
+                >
+                <Button 
+                    Text="Cancel" 
+                    Command="{Binding CancelCommand}"  
+                    IsEnabled="False"  
+                    BackgroundColor="Red" 
+                    HorizontalOptions="FillAndExpand"
+                    />
+                <Button 
+                    Text="Save" 
+                    IsEnabled="False" 
+                    Command="{Binding SaveModificationEmployeeCommand}" 
+                    BackgroundColor="#0345fc" 
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

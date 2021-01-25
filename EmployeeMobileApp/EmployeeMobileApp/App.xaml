@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeMobileApp.App">
+    <Application.Resources>
+        <!--Label style-->
+        <Style TargetType="Label">
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+        <Style TargetType="Frame" x:Key="FrameCollectionView">
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Padding" Value="8" />
+            <Setter Property="BackgroundColor" Value="Azure"/>
+        </Style>
+        <!--Button style-->
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#ddd" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="BorderColor" Value="White"/>
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="BorderWidth" Value="0" />
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Frame" x:Key="ImageFrame">
+            <Setter Property="CornerRadius" Value="100"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="BorderColor" Value="White"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="IsClippedToBounds" Value="True"/>
+            <Setter Property="WidthRequest" Value="200"/>
+            <Setter Property="HeightRequest" Value="200"/>
+            <Setter Property="HasShadow" Value="True"/>
+        </Style>
+        <Style TargetType="Frame" x:Key="IamgeFrameEmployee">
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="BorderColor" Value="White"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="IsClippedToBounds" Value="True"/>
+            <Setter Property="WidthRequest" Value="60"/>
+            <Setter Property="HeightRequest" Value="60"/>
+        </Style>
+        <Style TargetType="Frame" x:Key="ImageFrameCamera">
+            <Setter Property="CornerRadius" Value="25"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="BorderColor" Value="White"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="IsClippedToBounds" Value="True"/>
+            <Setter Property="WidthRequest" Value="50"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="TranslationX" Value="53"/>
+            <Setter Property="TranslationY" Value="-42"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="Margin" Value="6"/>
+        </Style>
+    </Application.Resources>
+</Application>

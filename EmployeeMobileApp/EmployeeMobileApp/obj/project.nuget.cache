@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "NwNIrigqZlK0MEEr+KFAHOl5Dtx92WMbwVBS2VZB4XQuHnseZMO4ZBvc0pUsfF2oLmTY9I5iyBy0AUL5TYxGfA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OFouda\\source\\repos\\EmployeeMobileApp\\EmployeeMobileApp\\EmployeeMobileApp\\EmployeeMobileApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\OFouda\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\OFouda\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\OFouda\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
+  ],
+  "logs": []
+}
